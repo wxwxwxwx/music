@@ -1,0 +1,20 @@
+{
+  "name": "qqmusic",
+  "homepage": "https://github.com/wxwxwxwx/class",
+  "authors": [
+    "王昕 <97677613@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "^2.2.4"
+  }
+}

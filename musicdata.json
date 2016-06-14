@@ -1,0 +1,24 @@
+[
+  {
+    "format": {
+      "filename": "../sound/1.mp3",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "format_name": "mp3",
+      "format_long_name": "MP2/3 (MPEG audio layer 2/3)",
+      "start_time": "0.000000",
+      "duration": "214.682313",
+      "size": "3436965",
+      "bit_rate": "128076",
+      "probe_score": 51,
+      "tags": {
+        "title": "¦PÃþ",
+        "track": "7",
+        "artist": "®]¿P?",
+        "genre": "Rock/Pop",
+        "TLEN": "214674",
+        "album": "Stefanie"
+      }
+    }
+  }
+]

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body id="html">
+    <audio id="audio" src=""></audio>
+
+    <div class="m_player" id="divplayer" role="application" style="left: 0px;">
+      <div class="m_player_dock" id="divsongframe">
+        <div class="music_info" id="divsonginfo">
+          <a href="" class="album_pic">
+          </a>
+          <div class="music_info_main">
+            <p class="music_name" title="">
+              <span id="music_name">听我想听的歌</span>
+              <a class="icon_radio">电台</a>
+            </p>
+            <p class="singer_name" id="singer_name" title="">qq音乐</p>
+            <p class="play_date" id="ptime"></p>
+            <p class="music_op" id="musicop" style="display:none;">
+              <strong class="btn_like" title="喜欢">
+                <span>我喜欢</span>
+              </strong>
+              <strong class="btn_share" title="分享">
+                <span>分享</span>
+              </strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="bar_op">
+          <strong title="上一首( [ )" class="prev_bt" id="prevbt">
+            <span>上一首</span>
+          </strong>
+          <strong title="播放(P)" class="play_bt" id="btnplay">
+            <span>播放</span>
+          </strong>
+          <strong title="下一首( ] )" class="next_bt" id="nextbt">
+            <span>下一首</span>
+          </strong>
+          <strong title="列表循环" class="cycle_bt" id="btnPlayway">
+            <span>列表循环</span>
+          </strong>
+          <p class="volume" title="音量调节">
+            <span class="volume_icon" id="spanmute" title="点击设为静音(M)"></span>
+            <span class="volume_regulate" id="spanvolume">
+              <span class="volume_bar" style="width: 100%;" id="spanvolumebar"></span>
+              <span class="volume_op" style="left: 100%;" id="spanvolumeop"></span>
+            </span>
+          </p>
+        </div>
+
+        <p class="playbar_cp_select" id="divselect" style="display: none;">
+          <strong title="顺序播放" class="ordered_bt">
+            <span>顺序播放</span>
+          </strong>
+          <strong title="随机播放" class="unordered_bt">
+            <span>随机播放</span>
+          </strong>
+          <strong title="单曲循环" class="cycle_single_bt">
+            <span>单曲循环</span>
+          </strong>
+          <strong title="列表循环" class="cycle_bt">
+            <span>列表循环</span>
+          </strong>
+        </p>
+
+        <p class="player_bar">
+          <span class="player_bg_bar" id="spanplayer_bgbar"></span>
+          <span class="download_bar" id="downloadbar" style="width: 0%;"></span>
+          <span class="play_current_bar" style="width: 0%;" id="spanplaybar"></span>
+          <span class="progress_op" style="left: 0%;" id="spanprogress_op"></span>
+        </p>
+
+        <div class="time_show" style="left: 11px; bottom: 8px; display: none;">
+          <p id="time_show">00:14</p>
+          <span class="icon_arrow_foot">
+            <i class="foot_border"></i>
+            <i class="foot_arrow"></i>
+          </span>
+        </div>
+      </div>
+
+      <span class="active_tip" id="spanaddtips" style="display: none; top: -30px;">
+      </span>
+      <span title="展开播放列表" class="open_list" id="spansongnum1" style="display: block;">
+        <span></span>
+      </span>
+      <span title="显示歌词(L)" class="btn_lyrics_disabled" id="btnlrc">歌词(L)</span>
+      <button type="button" class="folded_bt" title="点击收起" id="btnfold">
+        <span>点击收起/展开</span>
+      </button>
+
+      <!--play list-->
+      <div class="play_list_frame" id="divplayframe" style="display: block; opacity: 1;">
+        <div class="play_list_title">
+          <!-- 单曲FM修改 -->
+          <ul id="tab_container" style="width:270px;">
+            <li id="playlist_tab" class="current">
+              <a href="javascript:;">播放列表</a><i></i></li>
+            <li id="fm_tab" style="display:none" class="">
+              <a href="javascript:;">单曲电台列表</a><i></i></li>
+          </ul>
+          <span id="clear_list" class="clear_list" style="display: block;">清空列表</span>
+          <strong title="收起播放列表" class="close_list" id="btnclose"></strong>
+        </div>
+
+        <div class="play_list" id="divlistmain">
+
+          <div class="play_list_main" id="divplaylist" style="display: block; left: 0px; top: 0px;">
+            <!-- 播放列表_S-->
+            <div class="single_list" id="divsonglist" dirid="0">
+              <ul id="cc">
+
+							</ul>
+            </div>
+
+            <div id="divalbumlist" style="display:none;">
+            </div>
+          </div>
+
+          <div class="play_list_scroll" style="top:0px;display:none;">
+            <span id="spanbar" class="play_list_scrolling" style="left: 3px; top: 0px;"></span>
+          </div>
+        </div>
+      </div>
+
+      <!--歌词内容-->
+
+      <div class="single_radio_tip" id="single_radio_tip" style="display:none;">
+        <a href="javascript:;" class="close_tips"></a>
+      </div>
+    </div>
+
+
+</body>
+<script src="./bower_components/jQuery/dist/jquery.min.js"></script>
+<script src="index.js"></script>
+</html>
